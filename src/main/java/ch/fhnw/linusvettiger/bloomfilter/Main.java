@@ -43,6 +43,6 @@ public class Main {
 
         System.out.println(filter);
         System.out.printf("Expected error probability: %f\n", errorProbability);
-        System.out.printf("Experimentally calculated error probability: %.10f(%d/%d)\n", (double)falsePositive/trueNegative, falsePositive, trueNegative);
+        System.out.printf("Experimentally calculated error probability: %.10f(%d/%d)\n", (double)falsePositive/(falsePositive+trueNegative), falsePositive, (falsePositive+trueNegative));
     }
 }
